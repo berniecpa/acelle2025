@@ -1,0 +1,50 @@
+# Composer dependencies
+/vendor/
+composer.lock
+
+# Node modules (if using Node.js, NPM, or Yarn in the project)
+/node_modules/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# PHPUnit test results
+phpunit.xml
+/phpunit.xml.dist
+/test-results/
+
+# Cache and session files
+/cache/
+/sessions/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# User-specific files
+.env
+.env.local
+.env.*.local
+
+# Build files (if applicable)
+/build/
+/dist/
+
+# Temporary files
+/tmp/
+/temp/
+
+# Coverage reports
+/coverage/
+
+# Laravel specific (if applicable)
+/storage/*.key
+/public/storage
+/vendor/
+.env.testing
