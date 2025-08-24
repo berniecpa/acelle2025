@@ -5,10 +5,10 @@ WORKDIR /app
 
 ENV WEB_DOCUMENT_ROOT=/app/public
 
-# Fix permissions with 775
-RUN chmod -R 775 /app/storage /app/bootstrap/cache && \
-    chown -R application:application /app/storage /app/bootstrap/cache && \
+# Create directories if needed and fix permissions
+RUN mkdir -p /storage /app/storage /app/bootstrap/cache && \
+    chmod -R 775 /app/storage /app/bootstrap/cache && \
     chmod -R 775 /storage && \
-    chown -R application:application /storage
+    chown -R application:application /app /storage
 
 EXPOSE 80
